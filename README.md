@@ -1,6 +1,6 @@
 # InitProgramming
 
-#Lesson 1
+# Lesson 1
 
 ## The history of computing and programming
 
