@@ -25,6 +25,11 @@ def number_converter(number):
             return number_converter(number // 1000000) + " ሚሊዮን"
         else:
             return number_converter(number // 1000000) + " ሚሊዮን" + f" {number_converter(number % 1000000)}"
+    elif number < 1000000000000:
+        if number % 1000000000 == 0:
+            return number_converter(number // 1000000000) + " ቢሊዮን"
+        else:
+            return number_converter(number // 1000000000) + " ቢሊዮን" + f" {number_converter(number % 1000000000)}"
 input = input("ቁጥር አስገባ:")
 try:
     num = int(input)
